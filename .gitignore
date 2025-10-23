@@ -1,25 +1,21 @@
-# Dependencies and AdonisJS build
-node_modules
-build
-tmp
+# dependencies
+/node_modules
 
-# Secrets
+# env
 .env
-.env.local
-.env.production.local
-.env.development.local
+.env.*
 
-# Frontend assets compiled code
-public/assets
+# build & cache
+/tmp
+/build
+/dist
 
-# Build tools specific
-npm-debug.log
-yarn-error.log
+# logs
+*.log
 
-# Editors specific
-.fleet
-.idea
-.vscode
-
-# Platform specific
+# system
 .DS_Store
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo
