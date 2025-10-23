@@ -1,0 +1,28 @@
+@layout.seller({title: 'Add New Product'})
+
+  @slot('main')
+    <div class="seller-card">
+      <h1>Add New Product</h1>
+      <form id="add-product-form" class="seller-form" novalidate>
+        
+        <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="productPrice">Price (contoh: 499000)</label>
+            <input type="number" id="productPrice" required>
+        </div>
+
+        <div class="form-group">
+            <label for="productImage">Image URL (contoh: /images/product/new.png)</label>
+            <input type="text" id="productImage" required>
+        </div>
+
+        <button type="submit">Save Product</button>
+      </form>
+    </div>
+  @endslot
+
+@end

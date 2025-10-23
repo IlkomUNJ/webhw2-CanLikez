@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {{ title || "ZAXCKS Streetwear" }}
+    </title>
+    <link rel="icon" type="image/png" href="/images/head-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    @vite(['resources/css/main.css'])
+    @vite(['resources/js/app.js'])
+    @vite(['resources/js/main.js'])
+ 
+    @if ($slots.meta)
+      {{{ await $slots.meta() }}}
+    @endif
+  </head>
+  <body>
+    @include('partials/header')
+    @if ($slots.hero)
+      {{{ await $slots.hero() }}}
+    @endif
+    {{{ await $slots.main() }}} 
+    @if ($slots.script)
+      {{{ await $slots.script() }}}
+    @endif
+    @include('partials/footer')
+  </body>
+</html>

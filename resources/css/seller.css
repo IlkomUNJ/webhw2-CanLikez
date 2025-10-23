@@ -1,0 +1,121 @@
+/* main */
+html {
+  height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Mark Pro', Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+main {
+    flex-grow: 1; 
+    width: 100%;
+}
+
+.seller-main {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.seller-main h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.seller-main p {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* product list */
+.seller-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.seller-table th, .seller-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.seller-table th {
+  padding: 12px 15px;
+  background-color: #f9f9f9;
+  font-weight: 600;
+  text-align: left;
+}
+
+.seller-table tbody tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+.seller-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* add product */
+.seller-form .form-group {
+  margin-bottom: 20px;
+}
+
+.seller-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.seller-form input[type="text"],
+.seller-form input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.seller-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seller-form button:hover {
+  background-color: #555;
+}
+
+/* wishlist */
+#wishlist-analytics-list { 
+  list-style: none; 
+  padding: 0; 
+}
+
+#wishlist-analytics-list li { 
+  background-color: #f8fafc; 
+  padding: 15px; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+  border-left: 4px solid #1e293b; 
+}

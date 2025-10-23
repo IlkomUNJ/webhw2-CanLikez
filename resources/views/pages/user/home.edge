@@ -1,0 +1,142 @@
+@layout.app({title: 'ZAXCKS Streetwear'})
+
+  @slot('meta')
+    @vite(['resources/css/home.css'])
+  @endslot
+  
+  @slot('hero')
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          STREETWEAR VIBES
+        </h1>
+        <p>
+          Find our best styled items.
+        </p>
+        <a href="/product" class="cta-button">Shop Now</a>
+      </div>
+    </section>
+  @endslot
+  
+  @slot('main')
+    <main>
+      <section id="intro" class="alternate-section hidden">
+        <div class="layout-container">
+          <div class="layout-image">
+            <img src="/images/home/intro.jpg" alt="Intro Image" />
+          </div>
+          <div class="layout-text">
+            <h1>
+              Minimalism Never Dies
+            </h1>
+            <p>
+              Discover our exclusive monochrome streetwear collection <br />that defines timeless urban style.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="brand-story" class="alternate-section hidden">
+        <div class="layout-container">
+          <div class="layout-image">
+            <img src="/images/home/stories.webp" alt="Brand Story Image" />
+          </div>
+          <div class="layout-text">
+            <h2>
+              Our Story
+            </h2>
+            <p>
+              Founded in 2020, ZAXCKS Streetwear is dedicated to delivering high-quality, minimalist streetwear that resonates with the urban lifestyle. Our designs are inspired by the essence of simplicity and functionality, ensuring that every piece is not only stylish but also comfortable and durable. Join us in embracing the monochrome aesthetic that never goes out of style.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="brand-values" class="hidden">
+        <h2>
+          Our Values
+        </h2>
+        <div class="values-container">
+          <div class="value-item">
+            <h3>
+              Quality
+            </h3>
+            <p>
+              We prioritize high-quality materials and craftsmanship in every product we create.
+            </p>
+          </div>
+          <div class="value-item">
+            <h3>
+              Minimalism
+            </h3>
+            <p>
+              Our designs focus on simplicity and functionality, embodying the essence of minimalism.
+            </p>
+          </div>
+          <div class="value-item">
+            <h3>
+              Comfort
+            </h3>
+            <p>
+              We ensure that our streetwear is not only stylish but also comfortable for everyday wear.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlight-products">
+        <h2>
+          Our Highlights
+        </h2>
+
+        <div class="slider-container">
+          <div class="slides">
+            <div class="slide">
+              <img src="/images/product/slide1.webp" alt="Monochrome Hoodie" />
+              <div class="info">
+                <h3>
+                  Monochrome Hoodie
+                </h3>
+                <p>
+                  Experience the perfect blend of style and comfort with our Monochrome Hoodie.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="/images/product/slide2.png" alt="Classic Black Tee" />
+              <div class="info">
+                <h3>
+                  Classic Black Tee
+                </h3>
+                <p>
+                  Our Classic Black Tee is a wardrobe essential, offering a minimalist design.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="/images/product/slide3.png" alt="Cargo Pants" />
+              <div class="info">
+                <h3>
+                  Cargo Pants
+                </h3>
+                <p>
+                  Stay stylish and functional with our Urban Cargo Pants for the modern enthusiast.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="arrow prev">&#10094;</button>
+          <button class="arrow next">&#10095;</button>
+        </div>
+      </section>
+
+      <section id="closing-quote">
+        <blockquote>
+          "Simplicity is the ultimate sophistication." <br />- Leonardo da Vinci
+        </blockquote>
+      </section>
+    </main>
+  @endslot
+  
+@end

@@ -1,0 +1,20 @@
+@layout.seller({title: 'Seller Dashboard'})
+  @slot('main')
+    <main class="seller-main">
+            <h1>Product List</h1>
+            <a href="/seller/addProduct" class="seller-cta">Add New Product</a>
+            <table id="product-list-table" class="seller-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </main>
+@endslot
+@end

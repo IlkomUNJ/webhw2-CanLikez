@@ -1,0 +1,21 @@
+<div class="seller-layout-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="/" target="_blank">
+        <img src="/images/Logo.png" alt="ZAXCKS Logo" class="sidebar-logo"/>
+        </a>
+        <h2>Dashboard</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="/seller/dashboard">Dashboard (Products)</a></li>
+          <li><a href="/seller/addProduct">Add New Product</a></li>
+          <li><a href="/seller/wishlistView">Wishlist Analytics</a></li>
+          <hr>
+          <li><a href="/" target="_blank">View Public Site</a></li>
+          <li><a href="#" id="sign-out-btn">Sign Out</a></li>
+        </ul>
+      </nav>
+    </aside>
+    {{{ await $slots.main() }}} 
+</div>

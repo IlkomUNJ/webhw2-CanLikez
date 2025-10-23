@@ -1,0 +1,43 @@
+@layout.app({title: 'Products - ZAXCKS Streetwear'})
+
+  @slot('meta')
+    @vite(['resources/css/product.css'])
+  @endslot
+  
+  @slot('hero')
+    <section class="product-hero">
+      <div class="product-hero-content">
+        <h1>
+          Our Collection
+        </h1>
+        <p>
+          Explore our curated selection of minimalist streetwear.
+        </p>
+      </div>
+    </section>
+  @endslot
+  
+  @slot('main')
+    <main class="product-page">
+
+      <section class="page-title">
+        <h2>
+          All Products
+        </h2>
+      </section>
+
+      <section class="product-grid-container">
+        <div class="product-grid" id="product-grid-container">
+          @each(product in products)
+            @component('components/layout/product_card', product)
+            @end
+          @end
+        </div>
+        <div class="checkout-button-container">
+          <a href="/checkout" class="main-checkout-button">Proceed to Checkout</a>
+        </div>
+      </section>
+    </main>
+  @endslot
+  
+@end

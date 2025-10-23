@@ -1,0 +1,144 @@
+@layout.app({title: 'About - ZAXCKS Streetwear'})
+
+  @slot('meta')
+    @vite(['resources/css/about.css'])
+  @endslot
+  
+  @slot('hero')
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <h1>
+          ABOUT ZAXCKS
+        </h1>
+        <p>
+          Minimalist streetwear built for everyday urban life.
+        </p>
+      </div>
+    </section>
+  @endslot
+  
+  @slot('main')
+    <main class="about-page">
+
+      <section id="story" class="about-section hidden">
+        <div class="layout-container">
+          <div class="layout-image">
+            <img src="/images/home/stories.webp" alt="ZAXCKS workspace" />
+          </div>
+          <div class="layout-text">
+            <h2>
+              Our Story
+            </h2>
+            <p>
+              Founded in a small studio in 2020, ZAXCKS was born from a desire to return to the essence of streetwear: quality, comfort, and quiet confidence. We saw a world full of noise and decided to create a statement through simplicity. Every piece tells a part of our journey, and we invite you to make it a part of yours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="vision-mission" class="hidden">
+        <div class="v-m-container">
+          <div class="v-m-item">
+            <h3>
+              Our Vision
+            </h3>
+            <p>
+              To be the global benchmark for minimalist streetwear, proving that true style is timeless, not trendy.
+            </p>
+          </div>
+          <div class="v-m-item">
+            <h3>
+              Our Mission
+            </h3>
+            <p>
+              To craft high-quality, comfortable, and versatile apparel that empowers individuals to express their identity with subtle confidence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="craftsmanship" class="about-section hidden">
+        <h2>
+          Uncompromising Quality
+        </h2>
+        <p class="section-subtitle">
+          From fabric to stitch, every detail matters.
+        </p>
+        <div class="craft-grid">
+          <div class="craft-item">
+            <img src="/images/about/craft1.jpeg" alt="Premium Fabric" />
+            <h4>
+              Premium Materials
+            </h4>
+            <p>
+              We source only high-grade cotton and durable textiles designed for everyday comfort and longevity.
+            </p>
+          </div>
+          <div class="craft-item">
+            <img src="/images/about/craft2.jpg" alt="Detailed Stitching" />
+            <h4>
+              Precision Stitching
+            </h4>
+            <p>
+              Our garments are constructed with reinforced seams and meticulous attention to detail by skilled artisans.
+            </p>
+          </div>
+          <div class="craft-item">
+            <img src="/images/about/craft3.jpg" alt="Thoughtful Design" />
+            <h4>
+              Thoughtful Design
+            </h4>
+            <p>
+              Each design undergoes rigorous prototyping to ensure a perfect fit and functional, minimalist aesthetic.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sustainability" class="about-section hidden">
+        <div class="layout-container reverse">
+          <div class="layout-image">
+            <img src="/images/about/sustain.jpg" alt="Sustainable practices" />
+          </div>
+          <div class="layout-text">
+            <h2>
+              Our Social Impact
+            </h2>
+            <p>
+              We are committed to responsible production. We partner with ethical manufacturers, use eco-friendly packaging, and dedicate a portion of our profits to support local creative communities. Style shouldn't come at the cost of our planet or people.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="about-section hidden">
+        <h2>
+          Meet The Team
+        </h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="/images/about/team.jpg" alt="Founder 2" />
+            <p>
+              Our Beloved Teams
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="user-rate" class="about-section alt-bg">
+
+      </section>
+
+      <section id="cta" class="about-cta-section">
+        <h2>
+          Join The ZAXCKS Movement
+        </h2>
+        <p>
+          Ready to embrace the minimalist aesthetic? Explore our latest collection.
+        </p>
+        <a href="/product" class="cta-button-about">Shop Now</a>
+      </section>
+    </main>
+  @endslot
+  
+@end

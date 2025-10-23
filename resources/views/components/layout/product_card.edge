@@ -1,0 +1,22 @@
+<div class="product-card">
+  <div class="product-image-container">
+    <img src="{{ imageSrc }}" alt="{{ imageAlt }}" class="product-image" />
+  </div>
+  <div class="product-info">
+    <h3 class="product-name">
+      {{ name }}
+    </h3>
+    <p class="product-price">
+      Rp {{ price }}
+    </p>
+    <div class="product-action">
+      <a href="#" class="product-cta">View Details</a>
+      <button class="wishlist-btn" aria-label="Add to wishlist" data-product-id="{{ id }}">
+        <i class="far fa-heart"></i> 
+      </button>
+      <button class="product-cart-btn" aria-label="Add to cart" data-product-id="{{ id }}">
+        <i class="fas fa-shopping-cart"></i>
+      </button>
+    </div>
+  </div>
+</div>

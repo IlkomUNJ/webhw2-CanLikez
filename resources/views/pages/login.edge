@@ -1,0 +1,43 @@
+@layout.app({title: 'ZAXCKS Streetwear'})
+
+  @slot('meta')
+    @vite(['resources/css/login.css'])
+  @endslot
+  
+  @slot('main')
+    <main class="login-page">
+      <div class="login-container">
+        <div class="login-box">
+          <div class="login-header">
+            <h2>
+              Seller Login
+            </h2>
+            <p>
+              Welcome back, please enter your details.
+            </p>
+          </div>
+
+          @if(flashMessages.has('error'))
+            <div class="error-message">
+              {{ flashMessages.get('error') }}
+            </div>
+          @endif
+          
+          <form action="{{ route('auth.login') }}" method="POST" class="login-form">
+            {{ csrfField() }}
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="username" id="username" name="username" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <button type="submit" class="cta-button-dark">Login</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  @endslot
+  
+@end

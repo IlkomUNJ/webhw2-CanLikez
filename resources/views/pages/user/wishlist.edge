@@ -1,0 +1,29 @@
+@layout.app({title: 'My Wishlist - ZAXCKS Streetwear'})
+
+  @slot('meta')
+    @vite(['resources/css/product.css'])
+  @endslot
+
+  @slot('main')
+    <main class="product-page">
+      <section class="page-title">
+        <h2>My Wishlist</h2>
+      </section>
+
+      <section class="product-grid-container">
+        <div class="product-grid" id="wishlist-grid">
+        </div>
+        <div class="checkout-button-container">
+          <a href="/checkout" class="main-checkout-button">Proceed to Checkout</a>
+        </div>
+      </section>
+    </main>
+  @endslot
+
+  @slot('script')
+    <script>
+      const allProducts = {{{ JSON.stringify(allProducts) }}}
+    </script>
+  @endslot
+
+@end
